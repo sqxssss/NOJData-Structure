@@ -45,7 +45,7 @@ void search(LNode *A,LNode *B,LNode *C)
         if(((B)&&((B->next))) && ((C)&&((C->next))) && ((A)&&((A->next))) &&
             (((B)->next->data)) == (((A)->next->data)) && (((C)->next->data)) == (((A)->next->data)))
             {
-                del((A),(A)->next);
+                del((A),(A)->next);//input a as int
             }
         else
         {
@@ -69,7 +69,7 @@ int main()
 {
     LNode *A,*B,*C;
     int m,n,p;
-    scanf("%d%d%d",&m,&n,&p);
+    scanf("%d%d%d",&m,&n,&p);//input m n p
     A=CreateLinkList(m);
     B=CreateLinkList(n);
     C=CreateLinkList(p);
